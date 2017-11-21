@@ -1,0 +1,49 @@
+function search_usr()
+{
+    if($("#username").val()=="")
+    {
+        $("#password").hide("300");
+        $("#submit").hide("300");
+        return;
+    }
+    $.post(
+        "php/tmp.js",
+        {username:$("#username").val(),},
+        function(success){
+            if(success)
+            {
+                if(success==1){
+                    $("#password").attr("placeholder","输入密码以登录");
+                    $("#submit").text("登录");
+                }else{
+                    $("#password").attr("placeholder","输入密码以注册");
+                    $("#submit").text("注册");
+                }
+                $("#password").show("300");
+                $("#submit").show("300");
+            }
+        }
+    );
+}
+function transport()
+{
+    if($("#password").val()==""){
+        alert("输入密码");
+        return;
+    }
+    $.post(
+        "php/tmp.js",
+        {
+            username:$("#username").val(),
+            password:$("#password").val(),
+        },
+        function(success){
+            if(success)
+            {
+                if(success==1)
+                    window.location.href="index.html";
+                else alert("密码错误");
+            }
+        }
+    );
+}

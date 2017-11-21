@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.content{
+    width:61.8vw;
+    min-width:768px;
+    margin-bottom:19px;
+    min-height:calc(100% - 19px);
+    padding:15px;
+}
+.block{
+    background:rgba(255,255,255,0.618);
+    padding: 10px 15px 5px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.main-left{
+    float:left;
+    width:70%;
+}
+.main-right{
+    float:right;
+    width:calc(30% - 15px);
+}

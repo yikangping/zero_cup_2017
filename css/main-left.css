@@ -1,0 +1,27 @@
+@charset "utf-8";
+textarea{
+    font-size:16px;
+    border-radius:10px;
+}
+/*essay*/
+.article{
+    border-bottom: 6px solid #eeeeee;
+    margin-bottom: 20px;
+}
+.article_title{
+    font-size: 22px;
+}
+.article_sub_title{
+    font-size: 14px;
+}
+.article_abstract{
+    font-size: 13px;
+    color: #777777;
+    text-indent: 2em;
+}
+.article_btns{
+    padding:0 calc(50% - 125px);
+}
+.article_btns button{
+    margin: 0 15px;
+}

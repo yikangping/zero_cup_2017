@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+        <title>注册/登录</title>
+        <script src="js/jquery-321-min.js"  type="text/javascript"></script>
+        <script src="js/global.js" type="text/javascript"></script>
+        <script src="js/login.js" type="text/javascript"></script>
+        <link type="text/css" href="css/global.css" rel="stylesheet">
+        <link type="text/css" href="css/login.css" rel="stylesheet">
+    </head>
+    <body onload="rand_next();">
+        <div class="background" id="background" style="display:none;"></div>
+        <div class="content">
+            <div style="font-size:42px;">注册/登录</div>
+            <div style="border-radius:10px;margin-top:28px;">
+                <input type="text" placeholder="先输入一个账号" onblur="search_usr();" id="username"/>
+                <input type="password" style="display:none;" id="password"/>
+            </div>
+            <button style="display:none;" id="submit" onclick="transport();"></button>
+        </div>
+        <footer>A exercise for Zero Cup 2017.</footer>
+    </body>
+</html>
